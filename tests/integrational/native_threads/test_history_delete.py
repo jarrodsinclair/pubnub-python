@@ -27,7 +27,7 @@ class TestPubNubSuccessHistoryDelete(unittest.TestCase):  # pylint: disable=W061
             .channel("my-ch") \
             .start(123) \
             .end(456) \
-            .async(self.callback)
+            .async_(self.callback)
 
         self.assert_success()
 
@@ -36,6 +36,6 @@ class TestPubNubSuccessHistoryDelete(unittest.TestCase):  # pylint: disable=W061
             .channel("my-ch- |.* $") \
             .start(123) \
             .end(456) \
-            .async(self.callback)
+            .async_(self.callback)
 
         self.assert_success()

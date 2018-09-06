@@ -20,7 +20,7 @@ Synchronous calls can be invoked by using `sync()` call. This will return Envelo
 The work on it has been started in branch 'fix-errors-handling', but as were mentioned above, was postponed.
 
 #### async
-Asynchronous calls are implemented by using threads (`threading` module https://docs.python.org/3/library/threading.html). The passed-in to async() functinon callback will be called with a response or an error.
+Asynchronous calls are implemented by using threads (`threading` module https://docs.python.org/3/library/threading.html). The passed-in to async_() functinon callback will be called with a response or an error.
 
 ### Asyncio
 Asyncio library is supported since Python 3.4.
